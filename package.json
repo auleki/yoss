@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,8 +19,10 @@
   },
   "homepage": "https://github.com/auleki/yoss#readme",
   "dependencies": {
-    "fastify": "^3.3.0",
-    "fastify-cors": "^4.1.0",
-    "fastify-express": "^0.1.0"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
   }
 }
