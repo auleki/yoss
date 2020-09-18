@@ -6,7 +6,6 @@ const morgan = require('morgan');
 const userModels = require('./models/UserModel');
 
 const PORT = 5000 || process.env.PORT
-
 app.use(cors())
 app.use(morgan('dev'))
 app.use(express.json())
