@@ -1,0 +1,72 @@
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #ffffff;
+  border: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+  z-index: 1000;
+  color: #f2910a;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-shadow: 1px 5px 43px -4px #a3a3a3;
+  box-shadow: 1px 5px 15px -4px #dfdfdf;
+}
+
+.store {
+  background-color: #212121;
+  color: #2c2d34;
+  padding: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.2rem solid #2c2d34;
+}
+
+.store .logo img {
+  height: 5rem;
+  width: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50rem;
+  border: 0.25rem solid #f2910a;
+}
+
+.store .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 0 0 1rem;
+  color: #2c2d34;
+  width: 100%;
+}
+
+.store .description .name,
+.store .description .location,
+.store .description .products {
+  padding: .3rem 0;
+  color: #bdbdbd;
+}
+
+.store .description .name span,
+.store .description .location span,
+.store .description .products span {
+  color: #f2910a;
+  font-weight: 500;
+}
+/*# sourceMappingURL=App.css.map */

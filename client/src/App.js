@@ -1,12 +1,12 @@
 import React from 'react';
-import Homepage from './components /Homepage'
 import './App.sass';
+import SetRoutes from './components /SetRoutes';
 
 function App() {
   return (
-    <div className="App">
-      <Homepage />
-    </div>
+   <div>
+     <SetRoutes />
+   </div>
   );
 }
 

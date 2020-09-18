@@ -39,7 +39,6 @@ const StoreList = ({ store }) => {
 
     return (
       <>
-        {/* <h1>HI</h1> */}
         <Store stores={stores} />
       </>
     );
