@@ -1,6 +1,6 @@
 import React from 'react';
 // import styled from 'styled-components';
-import Navbar from '../commons/Navbar';
+import Navbar from '../commons/Navbar/Navbar';
 import StoreList from './StoreList';
 
 const Homepage = () => {  

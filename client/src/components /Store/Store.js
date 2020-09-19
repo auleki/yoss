@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import StoreProfile from './StoreProfile';
+// import StoreProfile from './StoreProfile';
+import styles from './Store.module.sass';
 
 // ADD A CARD TOGGLE ABILITY TO SHUFFLE THROUGH MODES 
 
@@ -10,8 +11,8 @@ const Store = ({ stores }) => {
     "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.6Lnx9wnYMMhB2u3TSn8jcwHaEK%26pid%3DApi&f=1"
 
   const storeLook = (store, i) => (
-      <div className="store" key={i}>
-        <div className="logo">
+      <div className={styles.store} key={i}>
+        <div className={styles.logo}>
 
           <img 
             src={imgURL} 
@@ -19,21 +20,21 @@ const Store = ({ stores }) => {
           />
         </div>
 
-        <div className="description">
-          <p className="name">
+        <div className={styles.description}>
+          <p className={styles.name}>
             Store Name: <span>{store.name}</span>
           </p>
-          <p className="location">
+          <p className={styles.location}>
             Location: <span>{store.location}</span>
           </p>
-          <p className="products">
+          <p className={styles.products}>
             Products Available: <span>{ store.products }</span>
           </p>
         </div>
 
-        <div className="view">
+        <div className={styles.view}>
         <Link to="/store-profile">
-          <span className="link_text">
+          <span className={styles.link_text}>
             View Store
           </span>
           <i className="fas fa-chevron-right"></i>

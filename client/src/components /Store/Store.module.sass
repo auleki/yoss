@@ -1,33 +1,4 @@
-// @use './variables'
-
-$c1: #efd510
-$c2: #e94822
-$c3: #f2910a
-$c4: #2c2d34
-$c5: #ffffff
-$c6: #212121
-$c7: #bdbdbd
- 
-
-body 
-  overflow-x: hidden
-
-.navbar 
-  display: flex
-  width: 100%
-  background-color: $c5
-  border: 0
-  align-items: center
-  padding: 1rem 0
-  z-index: 1000
-  // border-bottom: .3rem solid $c3
-  color: $c3
-  // border-bottom: .25rem solid $c7
-  justify-content: space-around
-  -webkit-box-shadow: 1px 5px 43px -4px rgba(163,163,163,1)
-  -moz-box-shadow: 1px 5px 43px -4px rgba(163,163,163,1)
-  box-shadow: 1px 5px 15px -4px #dfdfdf
-
+@import '../../variables'
 
 .store 
   background-color: $c6
@@ -35,6 +6,8 @@ body
   // margin: 1.5rem 0
   padding: 1.5rem 0
   display: flex
+  position: relative
+  font-family: Mulish
   align-items: center
   border-bottom: .2rem solid $c4
   .logo 
@@ -54,20 +27,20 @@ body
     // justify-content: center    
     color: $c4
     width: 100%
-
     .name,
     .location,
     .products
       padding: .3rem 0
-      color: $c7
-      
+      color: $c7      
       span 
         color: $c3
         font-weight: 500
 
   .view 
     // background-color: #fff
-    width: 50%
+    position: absolute
+    right: 1rem
+
     // padding: 0 1rem
     // padding: 1rem 1rem 1rem .5rem 
     a 
@@ -79,9 +52,7 @@ body
       // background-color: $c4
       align-items: center
       &:hover 
-        // background-color: lighten($c6, .5%)
-        background-color: $c4
-        // text-decoration: underline
+        text-decoration: underline
         padding: .5rem .7rem
         // text-decoration-color: $c5
         color: $c1
@@ -94,4 +65,4 @@ body
         color: $c3
         margin: 0 .25rem
 
-        
+      

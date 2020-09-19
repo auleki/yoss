@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.sass';
+import styles from './App.module.sass';
 import SetRoutes from './components /SetRoutes';
 
 function App() {
