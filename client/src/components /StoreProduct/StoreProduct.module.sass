@@ -1,0 +1,39 @@
+@import '../../variables'
+
+.product
+    display: flex
+    margin: .5rem 0
+    // padding: .5rem 1rem
+    font-family: $f1
+    align-items: center
+    // justify-content: space-evenly
+    background-color: darken($c4, 10%)
+    .product_image
+      // background-color: darken($c1, 10%)
+      img 
+        height: auto
+        width: 7rem
+        object-fit: cover
+        // border: .2rem solid $c7
+    .product_info
+      display: flex
+      justify-content: space-between
+      width: 100%
+      align-items: center
+      margin: 0 1rem
+      color: $c5
+      .bio
+        display: flex
+        // justify-content: space-evenly
+        align-items: center 
+        width: 100%
+        .name
+          font-size: 1.5rem
+          color: $c1
+        .price
+          margin: 0 1rem 
+          color: $c8
+
+
+
+
