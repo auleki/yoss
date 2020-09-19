@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.sass';
+// import moduleName from './App.modules'
 import SetRoutes from './components /SetRoutes';
 
 function App() {
   return (
-   <div>
+  <div>
      <SetRoutes />
    </div>
   );

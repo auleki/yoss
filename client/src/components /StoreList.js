@@ -1,9 +1,9 @@
 import React from 'react';
-import Store from './Store';
+import Store from './Store/Store';
 
 const StoreList = ({ store }) => {
 
-  const stores = [
+const stores = [
     {
       name: "Kimono Stores",
       location: "Lagos",
