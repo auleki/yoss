@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
+import StoreProfile from './StoreProfile';
 
 // ADD A CARD TOGGLE ABILITY TO SHUFFLE THROUGH MODES 
 
@@ -13,7 +15,7 @@ const Store = ({ stores }) => {
 
           <img 
             src={imgURL} 
-            alt="store picture"
+            alt="store avatar"
           />
         </div>
 
@@ -27,7 +29,15 @@ const Store = ({ stores }) => {
           <p className="products">
             Products Available: <span>{ store.products }</span>
           </p>
+        </div>
 
+        <div className="view">
+        <Link to="/store-profile">
+          <span className="link_text">
+            View Store
+          </span>
+          <i className="fas fa-chevron-right"></i>
+          </Link>
         </div>
       </div>
   )
@@ -39,7 +49,7 @@ const Store = ({ stores }) => {
       <div>
         {showStores}
       </div>
-    );
+    )
   }
 
 export default Store

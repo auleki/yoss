@@ -37,6 +37,7 @@ body {
 .store .logo img {
   height: 5rem;
   width: 5rem;
+  margin: 0 .5rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50rem;
