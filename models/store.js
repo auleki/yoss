@@ -12,9 +12,13 @@ const storeSchema =  new Schema({
     location: String,
     street: String
   },
-  completedSales: [purchases] 
+  completedSales: [purchases],
+  availableProducts: {
+    type: [],
+    default: null
+  },
+  dateJoined: Date,
+  logo: String
 })
 
-const Store = mongoose.model('store', storeSchema)
-
-module.exports = Store
+module.exports = Store = mongoose.model('store', storeSchema)

@@ -12,11 +12,16 @@ const customerSchema = new Schema({
     lowercase: true,
     unique: true
   },
+  phoneNumber: {
+    type: Number, 
+    required: true
+  },
   address: {
     type: String,
     required: true
   },
-  orderHistory: [],  
+  orderHistory: [],
+  imageUrl: String   
 
 })
 
