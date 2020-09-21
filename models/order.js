@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const orderSchema = new Schema({
+  id: String,
   total: {
     type: Number,
     required: true
@@ -14,6 +15,7 @@ const orderSchema = new Schema({
     type: String,
     required: true 
   },
+  delivered: Boolean,
   dispatchRider: {
     default: null,
     name : String,

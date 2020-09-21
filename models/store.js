@@ -9,6 +9,7 @@ const storeSchema =  new Schema({
   },
   address : {
     state: String, 
+    city: String,
     location: String,
     street: String
   },
