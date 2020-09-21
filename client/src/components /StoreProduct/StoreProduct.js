@@ -26,7 +26,7 @@ const StoreProduct = ({products: {name, price, image}}) => {
                         <Button onClick={addToCart}> 
                           <i className="fas fa-cart-plus"></i>
                         </Button>
-                        
+                        *
                     
                     </div>
                   </div>

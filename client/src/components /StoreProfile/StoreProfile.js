@@ -75,12 +75,18 @@ const StoreProfile = ({ store }) => {
             
             {/* Display all products */}
             <div className={styles.main}>
+              
               <header>
-                <h3>Products</h3>
+                <div className={styles.title}>
+                  <h3>Products</h3>
+                </div>
+
               </header>
+
               <ul className={styles.product_list}>
                 { storeProducts.map((store, i) => <StoreProduct products={store} key={i}/>) }             
               </ul>
+              
             </div>
         </div>
         
